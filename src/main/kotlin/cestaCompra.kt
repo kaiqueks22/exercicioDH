@@ -27,7 +27,7 @@ class Fatura {
                 Descrição do Item: ${element.descricaoItem}, item: ${element.numberItem}.
                 Quantidade: ${element.quantidadeUni}.
                 Valor unitario: ${element.valorUni} | Sub Total: ${element.valorUni * element.quantidadeUni}.
-                
+
             """.trimIndent())
             }
         }
@@ -36,7 +36,7 @@ class Fatura {
         }
         println("""
                 Valor Total: ${valorTotal}.
-                
+
                 """.trimIndent())
     }
 }
