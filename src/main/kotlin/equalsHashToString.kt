@@ -15,6 +15,7 @@ class Validar(var personA: Any) {
 fun main() {
     var pessoaA = Pessoa("kaique", 5214565884545)
     var pessoaB = Pessoa("Jonatas", 5214565884545)
+
     // validação de Pessoa e RG
     println(Validar(pessoaA.rg).equals(pessoaB.rg)) // TRUE
 
@@ -23,11 +24,11 @@ fun main() {
     println(pessoaB.nome.toString() +" "+ pessoaB.rg +" "+ pessoaB.rg.hashCode())
 
     // comparndo se eles são iguais!
-//    println(
-//        pessoaA.nome.toString() + pessoaA.rg + pessoaA.rg.hashCode()
-//        ==
-//        pessoaB.nome.toString() + pessoaB.rg + pessoaB.rg.hashCode()
-//    )
+    println(
+        pessoaA.nome.toString() + pessoaA.rg + pessoaA.rg.hashCode()
+        ==
+        pessoaB.nome.toString() + pessoaB.rg + pessoaB.rg.hashCode()
+    )
     println(
         Validar(
             pessoaA.nome.toString() + pessoaA.rg + pessoaA.rg.hashCode()

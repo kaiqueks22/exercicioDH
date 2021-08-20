@@ -1,4 +1,5 @@
-class Coca(var tamanho: Double, var preco: Double)
+
+data class Coca(var tamanho: Double, var preco: Double)
 
 class Validacao(var optionA: Any){
     override fun equals(other: Any?): Boolean {
@@ -15,7 +16,8 @@ class Validacao(var optionA: Any){
 }
 fun main(){
     val cocaA = Coca(5.50, 6.00)
-    val cocaB = Coca(5.50, 8.00)
+    val cocaB = Coca(5.50, 6.00)
+
 
     println("Equals: " + Validacao(cocaA).equals(cocaB))
 
