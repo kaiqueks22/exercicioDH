@@ -34,9 +34,9 @@ class Fatura {
         for (element in listaItem){
             valorTotal += (element.valorUni * element.quantidadeUni)
         }
-        println("""
+        println("""  
                 Valor Total: ${valorTotal}.
-
+ 
                 """.trimIndent())
     }
 }
